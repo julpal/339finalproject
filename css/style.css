@@ -1,1 +1,67 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Helvetica', 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    line-height: 1.0; 
+}
+
+h1{
+    font-size: 50px;
+    line-height: 1;
+    padding: 40px 0;
+    text-align: center;
+    color: black; 
+}
+  
+h2{
+    font-size: 32px;
+    line-height: 1.5;
+    color:black;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute; 
+    top: -40px;     
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  
+}
+  
+.skip a:focus, .skip a:active{
+    border: 2px solid black; 
+    left: auto; 
+    top: auto; 
+    height: auto; 
+    overflow: auto; 
+    margin: 40px; 
+    padding: 6px; 
+    z-index: 999; 
+} 
+
+footer{
+  
+    background-color: skyblue;
+    color:black;
+    grid-column: 1 / -1;  
+    grid-row: 7 / auto;   
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    text-align: center;
+}
+
+
+
+
+
+
 
