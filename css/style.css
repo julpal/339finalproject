@@ -47,6 +47,18 @@ h2 {
   padding: 6px;
   z-index: 999;
 }
+header {
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url("../images/north_quad"); /* Your code here - Link to header.jpg in the images folder */
+  background-position: center; /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  /* color: white; */
+  height: 400px; /* Parallax effect */
+  grid-column: 1/ -1;
+  grid-row: 2 / span 1;
+}
+/* referenced hw 4 SI 339 */
 
 footer {
   background-color: skyblue;
