@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nav bar</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 50px;
+      box-sizing: border-box;
+      min-height: 100vh;
+    }
+    nav {
+      background-color: #5fddf3;
+      display: flex;
+      flex-direction: row;
+      max-height: 10vh;
+      justify-content: space-around;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    #logo {
+      position: inherit;
+      transform: scale(0.3);
+    }
+    #logo2 {
+      width: 200px;
+      height: 200px;
+    }
+    .navlink {
+      display: flex;
+    }
+    .navlink a {
+      font-size: 24px;
+      text-decoration: none;
+      color: #333333;
+    }
+    .navlink a:hover {
+      color: #e7f9f0;
+    }
+    .navlink a:focus {
+      color: #e7f9f0;
+      border-radius: 25px solid black;
+    }
+    @media screen and (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        max-height: 50vh;
+      }
+
+      #logo {
+        order: 1;
+        z-index: 1;
+      }
+      .navlink {
+        order: 2;
+      }
+      .navlink a {
+        text-decoration: none;
+      }
+    }
+  </style>
+  <body>
+    <nav>
+      <div id="logo" class="navlink">
+        <a href="index.html">
+          <img src="circle.png" alt="logo" id="logo2" />
+        </a>
+      </div>
+      <div class="navlink">
+        <a class="active-page" href="index.html">Home</a>
+      </div>
+      <div class="navlink">
+        <a href="publications.html">Publications</a>
+      </div>
+      <div class="navlink">
+        <a href="education.html">Education</a>
+      </div>
+      <div class="navlink">
+        <a href="blog.html">Blog</a>
+      </div>
+    </nav>
+  </body>
+</html>
