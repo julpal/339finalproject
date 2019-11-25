@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>SLideshow</title>
+  </head>
+  <script>
+    $(document).ready(function() {
+      $(".customer-logos").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 520,
+            settings: {
+              slidesToShow: 2
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  <style>
+    /* Slider */
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slider {
+      position: relative;
+
+      display: block;
+      box-sizing: border-box;
+
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list {
+      position: relative;
+
+      display: block;
+      overflow: hidden;
+
+      margin: 0;
+      padding: 0;
+    }
+    .slick-list:focus {
+      outline: none;
+    }
+    .slick-list.dragging {
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list {
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      display: block;
+    }
+    .slick-track:before,
+    .slick-track:after {
+      display: table;
+
+      content: "";
+    }
+    .slick-track:after {
+      clear: both;
+    }
+    .slick-loading .slick-track {
+      visibility: hidden;
+    }
+
+    .slick-slide {
+      display: none;
+      float: left;
+
+      height: 100%;
+      min-height: 1px;
+    }
+    [dir="rtl"] .slick-slide {
+      float: right;
+    }
+    .slick-slide img {
+      display: block;
+      height: -webkit-fill-available;
+      width: auto;
+    }
+    .slick-slide.slick-loading img {
+      display: none;
+    }
+    .slick-slide.dragging img {
+      pointer-events: none;
+    }
+    .slick-initialized .slick-slide {
+      display: block;
+    }
+    .slick-loading .slick-slide {
+      visibility: hidden;
+    }
+    .slick-vertical .slick-slide {
+      display: block;
+
+      height: auto;
+
+      border: 1px solid transparent;
+    }
+    .slick-arrow.slick-hidden {
+      display: none;
+    }
+    .customer-logos {
+      height: 10vh;
+    }
+    /*header*/
+    header {
+      width: 800px;
+      margin: 40px auto;
+    }
+
+    header h1 {
+      text-align: center;
+      font: 100 60px/1.5 Helvetica, Verdana, sans-serif;
+    }
+
+    header p {
+      font: 100 15px/1.5 Helvetica, Verdana, sans-serif;
+      text-align: justify;
+    }
+
+    /*photobanner*/
+
+    .photobanner {
+      height: 233px;
+      width: 3550px;
+      margin-bottom: 80px;
+    }
+    /*keyframe animations*/
+    .first {
+      -webkit-animation: bannermove 30s linear infinite;
+      -moz-animation: bannermove 30s linear infinite;
+      -ms-animation: bannermove 30s linear infinite;
+      -o-animation: bannermove 30s linear infinite;
+      animation: bannermove 30s linear infinite;
+    }
+
+    @keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -2125px;
+      }
+    }
+
+    @-moz-keyframes bannermove {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -2125px;
+      }
+    }
+
+    @-webkit-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -2125px;
+      }
+    }
+
+    @-ms-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -2125px;
+      }
+    }
+
+    @-o-keyframes "bannermove" {
+      0% {
+        margin-left: 0px;
+      }
+      100% {
+        margin-left: -2125px;
+      }
+    }
+    .photobanner {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+
+    .photobanner img {
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+
+    .photobanner img:hover {
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+      cursor: pointer;
+
+      -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Display some text</h1>
+    </div>
+    <div class="photobanner">
+      <img class="first" src="images/SRG.png" alt="" />
+      <img src="images/SMRL.png" alt="" />
+      <img src="images/digitalstudies.png" alt="" />
+      <img src="images/ESC.png" alt="" />
+      <img src="images/CSMR.jpg" alt="" />
+      <img src="images/th-3.jpeg" alt="" />
+    </div>
+  </body>
+</html>
