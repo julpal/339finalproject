@@ -58,91 +58,143 @@
 				</div>
 			  </nav>
 
-<!--
-<table id="table" align="left"> -->
-
-<!-- <tr> -->
-
-
-
-
-
 </div>
-<!-- </table> -->
-
-<!-- <div id="researchTable3"> -->
 <div>
 <div class="publications" id="publications" valign="top">
-		<h5>PUBLICATIONS</h5>
-		<div id="text">
-		<br>
+	<h5>PUBLICATIONS</h5>
+	<div id="text">
+	<br>
 
-		<h4>Journal Publications (Peer-Reviewed)</h4>
+	<h4>Journal Publications (Peer-Reviewed)</h4>
 
-		<!doctype html>
-		<title>Example</title>
-		<style>
-		.grid {
-		display: grid;
-		/* grid-template-columns: minmax(100px, 200px) minmax(100px, 200px) minmax(100px, 200px);  */
+	<!doctype html>
+	<title>Example</title>
+<style>
 
-		/* grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); */
-		grid-gap: 20px;
-		align-items: stretch;
-		}
-		.grid > article {
-		border: 1px solid #ccc;
-		box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-		}
-		.grid > article img {
-		max-width: 100%;
-		}
-		.text {
-		padding: 0 20px 20px;
-		}
-		.text > button {
-		background: gray;
-		border: 0;
-		color: white;
-		padding: 10px;
-		width: 100%;
-		}
-		</style>
-		<main class="grid">
-		<div class="card-format">
-			<img src="images/FMS.png" alt="feminist media studies logo">
-			<div class="text">
-			<h3>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3>
-			<p><u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
-				<i>Feminist Media Studies</i>,
-				published online first October 2019, 17 pages<br></p>
+button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+body{
+	font-size: 16px;
+	padding: 10px; 
+}
+
+p {
+	padding: 0px 10px; 
+}
+
+.card {
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto; 
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 10px 10px 0 0;
+  height: 100%; 
+  max-height: 100%;
+  max-width: 100%; 
+  align-content: center;
+  object-fit: contain;
+}
+
+.container {
+  padding: 16px 16px;
+  display: inline-block; 
+  grid-column: 2/span 2;
+}
+
+h3 {
+	align-content: text-top; 
+	font-size: 21px; 
+
+}
+
+.images-pub {
+	overflow: hidden;
+	align-self: center;
+	justify-self: center;
+	grid-row: 1/auto;
+	grid-column: 1/auto;
+	height: 100%;
+	max-width: 210px;
+
+}
+</style>
+
+<main class="grid">
+
+<body>
+
+<!-- <h2>Round Card</h2> -->
+
+<div class="card">
+  <div class="images-pub"><img src="images/FMS.png" alt="feminist media studies logo" ></div>
+  <div class="container">
+	<h3>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3> 
+	<p><u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
+	<i>Feminist Media Studies</i>,
+		published online first October 2019, 17 pages<br></p>
+	<button>PDF</button>
+  </div>
+</div>
+
+
+	<div class="card">
+		<div class="images-pub"><img src="images/CSCW19.jpg" alt="minority stress"></div>
+			<div class="container">
+			<h3>The Language of LGBTQ+ Minority Stress Experiences on Social Media</h3>
+			<p><u>Koustuv Saha, Sang Chan Kim, Manikanta D. Reddy, Albert J. Carter, Eva Sharma, <u>Oliver L. Haimson</u>, Munmun De Choudhury<br>
+				<i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>,
+				3(CSCW), Article 89, November 2019, 21 pages (to be presented at CSCW 2019)<br>
+				[acceptance rate: 31%]<br></p>
 			<button>PDF</button>
-			</div>
 		</div>
+	</div>  
 
-		<div class="card-format">
-				<img src="images/.png" alt="images/CSCW19.jpg">
-				<div class="text">
-				<h3>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3>
-				<p><u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
-					<i>Feminist Media Studies</i>,
-					published online first October 2019, 17 pages<br></p>
+	<div class="card">
+			<div class="images-pub"><img src="images/CSCW19.jpg" alt="minority stress"></div>
+				<div class="container">
+				<h3><b>Mapping Gender Transition Sentiment Patterns via
+						Social Media Data: Toward Decreasing Transgender Mental Health Disparities</b><br></h3>
+				<p><u>Oliver L. Haimson</u>
+					<i>Journal of the American Medical Informatics Association (JAMIA)</i> (special issue on Health Informatics and Health Equity:
+					Improving Our Reach and Impact), 26(8-9), August/September 2019 (first published online May 2019), p. 749-758<br></p>
 				<button>PDF</button>
-				</div>
 			</div>
+	</div> 
 
-		</main>
+	<div class="card">
+			<div class="images-pub"><img src="images/CSCW19.jpg" alt="minority stress"></div>
+				<div class="container">
+				<h3><b>Social Media as Social Transition Machinery</b><br></h3>
+				<p><u>Oliver L. Haimson</u><br>
+					<i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>,
+					2(CSCW), Article 63, November 2018, 26 pages <br>
+					[acceptance rate: 26%] [<font color="#8338EC">Best Paper Honorable Mention</font>]<br></p>
+				<button>PDF</button>
+			</div>
+	</div> 
 
 
+</main>
+</body>
+</html> 
 
-		<div class="stress"><div valign="top"><a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target=_blank></a></div><img src="images/CSCW19.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a></td><td valign="top">
-		<b>The Language of LGBTQ+ Minority Stress Experiences on Social Media</b><br>
-		Koustuv Saha, Sang Chan Kim, Manikanta D. Reddy, Albert J. Carter, Eva Sharma, <u>Oliver L. Haimson</u>, Munmun De Choudhury<br>
-		<i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>,
-		3(CSCW), Article 89, November 2019, 21 pages (to be presented at CSCW 2019)<br>
-		[acceptance rate: 31%]<br>
-		[link] [<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank">PDF</a>]
-		</div>
+
 
 
 		<div class="gender"><div valign="top"><a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank"></a></div><img src="images/JAMIA.png" style="width:50px; margin-right:10px; margin-top:4px;"/></a></td><td valign="top">
