@@ -112,18 +112,11 @@ footer {
   padding-bottom: 10px;
 }
 
-#contact {
-  color: white;
-  justify-content: flex-end;
-  padding-right: 10px;
-}
-
-
 nav {
   background-color: #5fddf3;
   display: flex;
-  flex-direction: row;
-  max-height: 10vh;
+  flex-direction: column;
+  max-height: 50vh;
   justify-content: space-around;
   align-items: center;
   position: sticky;
@@ -131,14 +124,34 @@ nav {
 }
 
 #logo {
-  margin-left: -10vw;
+  margin-left: 0vw;
+  order: 1;
+  z-index: 1;
+  margin-top: -8vh;
+  margin-bottom: -9vh;
   position: inherit;
   transform: scale(0.3);
 }
+
 #logo2 {
   width: 200px;
   height: 200px;
 }
+
+.navlink {
+  order: 2;
+}
+
+.navlink a {
+  text-decoration: none;
+}
+
+#contact {
+  color: white;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
 .navlink {
   display: flex;
 }
@@ -154,23 +167,51 @@ nav {
   color: #e7f9f0;
   border-radius: 25px solid black;
 }
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    max-height: 50vh;
-  }
 
-  #logo {
-    margin-left: 0vw;
-    order: 1;
-    z-index: 1;
-    margin-top: -8vh;
-    margin-bottom: -10vh;
-  }
-  .navlink {
-    order: 2;
-  }
-  .navlink a {
-    text-decoration: none;
-  }
+.each_student img {
+  max-width: 60px;
 }
+
+.container {
+  padding: 10px;
+}
+
+a.selected{
+  font-weight: bold;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 30px;
+  padding: 30px;
+}
+
+.teaching {
+grid-column: 1;
+}
+
+.students {
+  grid-column: 2;
+}
+
+nav {
+  flex-direction: row;
+  max-height: 10vh;
+}
+
+#logo {
+  margin-left: -10vw;
+  order: 1;
+  z-index: 1;
+  margin-top: -8vh;
+  margin-bottom: -9vh;
+
+
+
+  @media screen and (min-width: 1200px) {
+
+  }
