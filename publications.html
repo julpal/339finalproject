@@ -19,7 +19,6 @@
 <link rel="icon" type="image/png" href="images/olh.png">
 
 <link rel="stylesheet" href="haimson.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/style.css">
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -37,25 +36,6 @@
 </head>
 
 <body>
-	<nav>
-      <div id="logo" class="navlink">
-        <a href="index.html">
-          <img src="images/haimson.png" alt="logo" id="logo2" />
-        </a>
-      </div>
-      <div class="navlink">
-        <a class="active-page" href="index.html">Home</a>
-      </div>
-      <div class="navlink">
-        <a href="publications.html">Publications</a>
-      </div>
-      <div class="navlink">
-        <a href="education.html">Education</a>
-      </div>
-      <div class="navlink">
-		<a href="https://medium.com/@haimson" target="_blank">Blog</a>
-      </div>
-    </nav>
 
 <!-- 
 <table id="table" align="left"> -->
@@ -93,25 +73,67 @@
 
 <!-- <div id="researchTable3"> -->
 <div>
-<div class="publications" id="publications" valign="top" style="width:548px;">
+<div class="publications" id="publications" valign="top">
 		<h5>PUBLICATIONS</h5>
 		<div id="text">
 		<br>
 
 		<h4>Journal Publications (Peer-Reviewed)</h4>
 
-
-
-
-		
-
-		<div class ="tumblr"><div valign="top"><a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target=_blank></a></div><img src="images/FMS.png" style="width:50px; margin-right:10px; margin-top:4px;"/></a></td><td valign="top">
-		<b>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</b><br>
-		<u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
-		<i>Feminist Media Studies</i>,
-		published online first October 2019, 17 pages<br>
-		[<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">open-access link</a>]  [<a href="PDFs/HaimsonTumblrTransTechnology.pdf" target=_blank">PDF</a>]  [blog]
+		<!doctype html>
+		<title>Example</title>
+		<style>
+		.grid { 
+		display: grid;
+		/* grid-template-columns: minmax(100px, 200px) minmax(100px, 200px) minmax(100px, 200px);  */
+	
+		/* grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); */
+		grid-gap: 20px;
+		align-items: stretch;
+		}
+		.grid > article {
+		border: 1px solid #ccc;
+		box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+		}
+		.grid > article img {
+		max-width: 100%;
+		}
+		.text {
+		padding: 0 20px 20px;
+		}
+		.text > button {
+		background: gray;
+		border: 0;
+		color: white;
+		padding: 10px;
+		width: 100%;
+		}
+		</style>
+		<main class="grid">
+		<div class="card-format">
+			<img src="images/FMS.png" alt="feminist media studies logo">
+			<div class="text">
+			<h3>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3>
+			<p><u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
+				<i>Feminist Media Studies</i>,
+				published online first October 2019, 17 pages<br></p>
+			<button>PDF</button>
+			</div>
 		</div>
+
+		<div class="card-format">
+				<img src="images/.png" alt="images/CSCW19.jpg">
+				<div class="text">
+				<h3>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3>
+				<p><u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
+					<i>Feminist Media Studies</i>,
+					published online first October 2019, 17 pages<br></p>
+				<button>PDF</button>
+				</div>
+			</div>
+		
+		</main>
+
 		
 
 		<div class="stress"><div valign="top"><a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target=_blank></a></div><img src="images/CSCW19.jpg" style="width:50px; margin-right:10px; margin-top:4px;"/></a></td><td valign="top">
