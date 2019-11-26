@@ -71,22 +71,14 @@
 	<title>Example</title>
 <style>
 
-button {
-  background: gray;
+/* button {
+  background: #525252;
   border: 0;
   color: white;
   padding: 10px;
   width: 100%;
 }
 
-body{
-	font-size: 16px;
-	padding: 10px; 
-}
-
-p {
-	padding: 0px 10px; 
-}
 
 .card {
 	display: grid; 
@@ -102,7 +94,7 @@ p {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-img {
+.img-class-pub {
   border-radius: 10px 10px 0 0;
   height: 100%; 
   max-height: 100%;
@@ -111,13 +103,14 @@ img {
   object-fit: contain;
 }
 
-.container {
+.card-container {
   padding: 16px 16px;
   display: inline-block; 
   grid-column: 2/span 2;
+  font-size: 16px;
 }
 
-h3 {
+h3.card-header {
 	align-content: text-top; 
 	font-size: 21px; 
 
@@ -132,19 +125,19 @@ h3 {
 	height: 100%;
 	max-width: 210px;
 
-}
+} */
 </style>
 
-<main class="grid">
+<main class="pub-grid">
 
 <body>
 
 <!-- <h2>Round Card</h2> -->
 
 <div class="card">
-  <div class="images-pub"><img src="images/FMS.png" alt="feminist media studies logo" ></div>
-  <div class="container">
-	<h3>Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3> 
+  <div class="images-pub"><img class="img-class-pub" src="images/FMS.png" alt="feminist media studies logo" ></div>
+  <div class="card-container">
+	<h3 class="card-header">Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</h3> 
 	<p><u>Oliver L. Haimson</u>, Avery Dame-Griff, Elias Capello, Zahari Richter<br>
 	<i>Feminist Media Studies</i>,
 		published online first October 2019, 17 pages<br></p>
@@ -154,9 +147,9 @@ h3 {
 
 
 	<div class="card">
-		<div class="images-pub"><img src="images/CSCW19.jpg" alt="minority stress"></div>
-			<div class="container">
-			<h3>The Language of LGBTQ+ Minority Stress Experiences on Social Media</h3>
+		<div class="images-pub"><img class="img-class-pub" src="images/CSCW19.jpg" alt="minority stress"></div>
+			<div class="card-container">
+			<h3 class="card-header">The Language of LGBTQ+ Minority Stress Experiences on Social Media</h3>
 			<p><u>Koustuv Saha, Sang Chan Kim, Manikanta D. Reddy, Albert J. Carter, Eva Sharma, <u>Oliver L. Haimson</u>, Munmun De Choudhury<br>
 				<i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>,
 				3(CSCW), Article 89, November 2019, 21 pages (to be presented at CSCW 2019)<br>
@@ -166,9 +159,9 @@ h3 {
 	</div>  
 
 	<div class="card">
-			<div class="images-pub"><img src="images/CSCW19.jpg" alt="minority stress"></div>
-				<div class="container">
-				<h3><b>Mapping Gender Transition Sentiment Patterns via
+			<div class="images-pub"><img class="img-class-pub" src="images/CSCW19.jpg" alt="minority stress"></div>
+				<div class="card-container">
+				<h3 class="card-header"><b>Mapping Gender Transition Sentiment Patterns via
 						Social Media Data: Toward Decreasing Transgender Mental Health Disparities</b><br></h3>
 				<p><u>Oliver L. Haimson</u>
 					<i>Journal of the American Medical Informatics Association (JAMIA)</i> (special issue on Health Informatics and Health Equity:
@@ -178,9 +171,9 @@ h3 {
 	</div> 
 
 	<div class="card">
-			<div class="images-pub"><img src="images/CSCW19.jpg" alt="minority stress"></div>
-				<div class="container">
-				<h3><b>Social Media as Social Transition Machinery</b><br></h3>
+			<div class="images-pub"><img class="img-class-pub" src="images/CSCW19.jpg" alt="minority stress"></div>
+				<div class="card-container">
+				<h3 class="card-header"><b>Social Media as Social Transition Machinery</b><br></h3>
 				<p><u>Oliver L. Haimson</u><br>
 					<i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>,
 					2(CSCW), Article 63, November 2018, 26 pages <br>
