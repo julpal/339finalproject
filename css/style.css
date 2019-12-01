@@ -145,14 +145,6 @@ nav {
   height: 200px;
 }
 
-.navlink {
-  order: 2;
-}
-
-.navlink a {
-  text-decoration: none;
-}
-
 #contact {
   color: white;
   justify-content: flex-end;
@@ -161,20 +153,24 @@ nav {
 
 .navlink {
   display: flex;
+  order: 2;
 }
 .navlink a {
   font-size: 24px;
   text-decoration: none;
-  color: #333333;
+  color: #101010;
 }
 .navlink a:hover {
-  color: #e7f9f0;
+  color: #0009ff;
 }
 .navlink a:focus {
-  color: #e7f9f0;
+  color: #0009ff;
   border-radius: 25px solid black;
 }
 
+.navlink a.selected{
+  color: #0009ff;
+}
 .each_student img {
   max-width: 60px;
 }
@@ -183,9 +179,6 @@ nav {
   padding: 10px;
 }
 
-a.selected{
-  font-weight: bold;
-}
 
 
 /* CARD STYLING */ 
