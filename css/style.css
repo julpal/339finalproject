@@ -226,13 +226,13 @@ h3.card-header {
 }
 
 .images-pub {
-	overflow: hidden;
-	align-self: center;
-	justify-self: center;
-	grid-row: 1/auto;
-	grid-column: 1/auto;
-	height: 100%;
-	max-width: 210px;
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / auto;
+  grid-column: 1 / auto;
+  height: 100%;
+  max-width: 210px;
 }
 
 .img-class-edu {
@@ -246,12 +246,12 @@ h3.card-header {
 
 .images-edu {
   overflow: hidden;
-	align-self: center;
-	justify-self: center;
-	grid-row: 1/auto;
-	grid-column: 1/auto;
-	height: 100%;
-	max-width: 210px;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / auto;
+  grid-column: 1 / auto;
+  height: 100%;
+  max-width: 210px;
 }
 
 /* END CARD STYLING */
@@ -277,6 +277,7 @@ h3.card-header {
   margin: 0 auto;
 }
 #affiliated {
+  text-align: center;
   padding: 20px;
 }
 /* Slider */
