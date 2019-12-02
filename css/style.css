@@ -220,6 +220,11 @@ button {
   font-size: 16px;
 }
 
+.card-container-no-img{
+  grid-column: 1/span 3;
+  padding: 16px 16px; 
+}
+
 h3.card-header {
   align-content: text-top;
   font-size: 21px;
@@ -419,7 +424,7 @@ h3.card-header {
     display: grid;
     grid-template-columns: 50% 50%;
     /* grid-template-rows: 100px auto auto auto auto 100px; */
-    grid-column-gap: 10px;
+    grid-column-gap: 30px;
     row-gap: 15px;
     width: 100vw;
   }
