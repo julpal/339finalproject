@@ -222,7 +222,7 @@ button {
 
 .card-container-no-img{
   grid-column: 1/span 3;
-  padding: 16px 16px; 
+  padding: 16px 16px;
 }
 
 h3.card-header {
@@ -435,6 +435,26 @@ h3.card-header {
   }
 
   .full-pub-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .short-papers-pub-cards{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .workshop-papers-pub-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informally-published-pub-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .media-coverage-pub-cards {
     display: flex;
     flex-direction: column;
   }
