@@ -68,7 +68,7 @@
 -->
 	<header>
 		<h1>OLIVER L. HAIMSON, Ph.D.</h1>
-		<p></p>
+		<h2>I am a social computing researcher focused on changing identities on social media during life transistions, with a primary research goal of impacting technological inclusion of marginalized users.</h2>
 	</header>
 
 <!--<div class="info">-->
@@ -89,7 +89,7 @@
 
 
 	<div class="about">
-		<a href="index.html"><img src="haimson.jpg" alt="Oliver Haimson" style="width:259px"/>
+		<a href="index.html"><img src="images/haimson.jpeg" alt="Oliver Haimson" style="width:259px"/>
     	<h2>ABOUT</h2>
     		<p>I am an Assistant Professor at <a href="https://www.umich.edu/" target="_blank">University of Michigan</a> <a href="https://www.si.umich.edu/" target="_blank">School of Information</a> (UMSI). Prior to this position, I was a President's Postdoctoral Fellow at UMSI during 2018-2019. I conduct social computingresearch focused on how people present and disclose changing identities on social media during life transitions, with a primary research goal of impacting technological inclusion of marginalized users. One of my main research areas is transgender identity disclosure and presentation on social media. I am a recipient of a National Science Foundation Graduate Research Fellowship, a Rob Kling Memorial Fellowship, and a Eugene Cota-Robles Fellowship.</p>
 			<p>I earned my Ph.D. in Information and Computer Science in 2018 from the <a href="http://www.informatics.uci.edu" target="_blank">Informatics Department</a> at <a href="http://www.uci.edu" target="_blank"> University of California, Irvine</a>’s <a href="http://www.ics.uci.edu" target="_blank"> Bren School of Information and Computer Sciences</a>, where I worked with <a href="http://www.gillianhayes.com" target="_blank"> Gillian Hayes</a>. I received my M.S. in Information and Computer Science from <a href="http://www.informatics.uci.edu" target="_blank">UCI Informatics</a>, and my B.S. in Economics at <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a>. I also participated in the <a href="http://www.ischool-inclusion.org" target="_blank"> iSchool Inclusion Institute (i3)</a>. Prior to my academic pursuits, I founded and managed independent bookstores for a number of years. I also toured and recorded as guitarist, vocalist, and songwriter in several rock bands. I am a big fan of most animals, including <a href="images/cat.jpg" target="_blank">cats</a>, which I have, and dogs, which I hope to have in the future.</p>
@@ -143,7 +143,7 @@
 <!--		<div class="onlinespaces">-->
 		<div class="card">
 			<a href="onlinespacessensitivepopulations.html">
-				<div class="box">
+				<div class="card-container">
 					<img src="images/onlinespacessensitivepopulations.png" alt="scan of human" />
 					<h4>Online spaces and sensitive populations</h4>
 				</div>
@@ -152,385 +152,472 @@
 
 <div class="news">
 		<h2>NEWS</h2>
+	
+<!--
+	<div class="card">
+		<div class="images-pub"><img class="img-class-pub" src="images/CSCW19.jpg" alt="minority stress"></div>
+			<div class="card-container">
+			<h3 class="card-header">The Language of LGBTQ+ Minority Stress Experiences on Social Media</h3>
+			<p><u>Koustuv Saha, Sang Chan Kim, Manikanta D. Reddy, Albert J. Carter, Eva Sharma, <u>Oliver L. Haimson</u>, Munmun De Choudhury<br>
+				<i>Proceedings of the ACM Human Computer Interaction (PACM HCI)</i>,
+				3(CSCW), Article 89, November 2019, 21 pages (to be presented at CSCW 2019)<br>
+				[acceptance rate: 31%]<br></p>
+			<button>PDF</button>
+		</div>
+	</div>
+-->
+	<style>
+		.news-card {
+				display: grid; 
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: auto auto auto; 
+  			box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+ 			transition: 0.3s;
+  			width: 100%;
+  			border-radius: 5px;
+		}
+
+		.news-card:hover {
+ 			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+
+		.img-class-news {
+ 			border-radius: 10px 10px 0 0;
+  			height: 100%; 
+  			max-height: 100%;
+  			max-width: 100%; 
+  			align-content: center;
+  			object-fit: contain;
+		}
+
+		.news-container {
+  			padding: 16px 16px;
+  			display: inline-block; 
+  			grid-column: 2/span 2;
+  			font-size: 16px;
+		}
+
+		h3.news-card-header {
+			align-content: text-top; 
+			font-size: 21px; 
+
+		}
+
+		.images-news {
+			overflow: hidden;
+			align-self: center;
+			justify-self: center;
+			grid-row: 1/auto;
+			grid-column: 1/auto;
+			height: 100%;
+			max-width: 210px;
+
+		}
+	</style>
 <!--
 
 	<div id="feminist_media_studies">
 -->
-	<div id="news-card">
-		<h3>Paper published in Feminist Media Studies</h3>
-		<h4>October 24, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">
+				<img class="img-class-news" src="images/FMS.png" alt="feminist media studies" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank"><img src="images/FMS.png" alt="feminist media studies" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-
-			<p>My new paper "<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</a>,"
+			<h3 class="news-card-header">Paper published in Feminist Media Studies</h3>
+			<h4 class="news-card-date">October 24, 2019</h4>
+			<p class="news-card-text">My new paper "<a href="https://www.tandfonline.com/doi/full/10.1080/14680777.2019.1678505" target="_blank">Tumblr was a Trans Technology: The Meaning, Importance, History, and Future of Trans Technologies</a>,"
 			co-authored with Avery Dame-Griff, Elias Capello, and Zahari Richter, was published
 			in <a href="https://www.tandfonline.com/toc/rfms20/current" target="_blank">Feminist Media Studies</a>.</p>
 		</div>
 	</div>
 <br/>
 <!--<div class="paper_cscw">-->
-	<div id="news-card">
-		<h3>Paper accepted for CSCW</h3>
-		<h4>September 4, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf">
+				<img class="img-class-news" src="images/CSCW19.jpg" alt="CSCW logo" />
+			</a>
+		</div>
 		<div class="news-container">
-	  		<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf"><img src="images/CSCW19.jpg" alt="CSCW logo" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>"<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank">The Language of LGBTQ+ Minority Stress Experiences on Social Media</a>," a paper I co-authored with Koustuv Saha (lead author), Sang Chan Kim, Manikanta Reddy, AJ Carter, Eva Sharma, and Munmun De Choudhury, has been accepted to <a href="http://cscw.acm.org/2019/">CSCW 2019</a>.</p>
+			<h3 class="news-card-header">Paper accepted for CSCW</h3>
+			<h4 class="news-card-date">September 4, 2019</h4>
+			<p class="news-card-text">"<a href="http://koustuv.com/papers/CSCW19_MinorityStress.pdf" target="_blank">The Language of LGBTQ+ Minority Stress Experiences on Social Media</a>," a paper I co-authored with Koustuv Saha (lead author), Sang Chan Kim, Manikanta Reddy, AJ Carter, Eva Sharma, and Munmun De Choudhury, has been accepted to <a href="http://cscw.acm.org/2019/">CSCW 2019</a>.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="workshop_cscw">-->
-	<div id="news-card">
-		<h3>Workshop at CSCW 2019</h3>
-		<h4>August 5, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://www.socialtransitiontech.com/">
+				<img class="img-class-news" src="images/CSCW19.jpg" alt="CSCW logo" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://www.socialtransitiontech.com/"><img src="images/CSCW19.jpg" alt="CSCW logo" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>I am co-organizing a workshop at <a href="http://cscw.acm.org/2019/">CSCW 2019</a> on <a href="https://www.socialtransitiontech.com/">Life Transitions and Social Technologies: Research and Design for Times of Life Change</a>, with Bryan Semaan, Brianna Dym, Joey Chiao-Yin Hsiao, Daniel Herron, and Wendy Moncur. Join us in discussing these topics! Information on how to submit a paper is <a href="https://www.socialtransitiontech.com/" target="_blank">here</a>.</p>
+			<h3 class="news-card-header">Workshop at CSCW 2019</h3>
+			<h4 class="news-card-date">August 5, 2019</h4>
+			<p class="news-card-text">I am co-organizing a workshop at <a href="http://cscw.acm.org/2019/">CSCW 2019</a> on <a href="https://www.socialtransitiontech.com/">Life Transitions and Social Technologies: Research and Design for Times of Life Change</a>, with Bryan Semaan, Brianna Dym, Joey Chiao-Yin Hsiao, Daniel Herron, and Wendy Moncur. Join us in discussing these topics! Information on how to submit a paper is <a href="https://www.socialtransitiontech.com/" target="_blank">here</a>.</p>
     	</div>
 	</div>
 <br/>
 
 <!--<div class="interactions_magazine">-->
-	<div id="news-card">
-		<h3>Article in Interactions Magazine</h3>
-		<h4>July 9, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://interactions.acm.org/archive/view/july-august-2019/how-to-do-better-with-gender-on-surveys" target="_blank">
+				<img class="img-class-news" src="images/interactions.png" alt="Interactions Magazine Logo" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://interactions.acm.org/archive/view/july-august-2019/how-to-do-better-with-gender-on-surveys" target="_blank"><img src="images/interactions.png" alt="Interactions Magazine Logo" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>I have a forum article in the new issue of <a href="https://interactions.acm.org/archive/toc/july-august-2019" target="_blank">ACM Interactions Magazine</a>, titled "<a href="https://interactions.acm.org/archive/view/july-august-2019/how-to-do-better-with-gender-on-surveys" target="_blank">How to Do Better with Gender on Surveys: A Guide for HCI Researchers</a>," co-authored with Katta Spiel (lead author) and Danielle Lottridge.</p>
+			<h3 class="news-card-header">Article in Interactions Magazine</h3>
+			<h4 class="news-card-date">July 9, 2019</h4>
+			<p class="news-card-text">I have a forum article in the new issue of <a href="https://interactions.acm.org/archive/toc/july-august-2019" target="_blank">ACM Interactions Magazine</a>, titled "<a href="https://interactions.acm.org/archive/view/july-august-2019/how-to-do-better-with-gender-on-surveys" target="_blank">How to Do Better with Gender on Surveys: A Guide for HCI Researchers</a>," co-authored with Katta Spiel (lead author) and Danielle Lottridge.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="wired_article">-->
-	<div id="news-card">
-		<h3>Quoted in WIRED article</h3>
-		<h4>June 29, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://www.wired.com/story/lgbtq-mental-health-digital-outreach/" target="_blank">
+				<img class="img-class-news" src="images/WIRED.png" alt="man sitting at desk" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://www.wired.com/story/lgbtq-mental-health-digital-outreach/" target="_blank"><img src="images/WIRED.png" alt="man sitting at desk" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>I was recently quoted in WIRED's story "<a href="https://www.wired.com/story/lgbtq-mental-health-digital-outreach/" target="_blank">LGBTQ+ Youth Prefer to Seek Mental Health Help Digitally</a>" by Emily Dreyfuss.</p>
+			<h3 class="news-card-header">Quoted in WIRED article</h3>
+			<h4 class="news-card-date">June 29, 2019</h4>
+			<p class="news-card-text">I was recently quoted in WIRED's story "<a href="https://www.wired.com/story/lgbtq-mental-health-digital-outreach/" target="_blank">LGBTQ+ Youth Prefer to Seek Mental Health Help Digitally</a>" by Emily Dreyfuss.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="pronoun_sharing">-->
-	<div id="news-card">
-		<h3>Essay on pronoun sharing and disclosure</h3>
-		<h4>June 29, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://medium.com/national-center-for-institutional-diversity/making-space-for-them-her-him-and-prefer-not-to-disclose-in-group-settings-why-1deb8c3d6b86" target="_blank">
+				<img class="img-class-news" src="images/NCID.jpg" alt="NCID logo" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://medium.com/national-center-for-institutional-diversity/making-space-for-them-her-him-and-prefer-not-to-disclose-in-group-settings-why-1deb8c3d6b86" target="_blank"><img src="images/NCID.jpg" alt="NCID logo" style="width:80px; margin-right:10px; margin-top:4px;"/></a>
-			<p>Lee Airton and I wrote an essay titled "<a href="https://medium.com/national-center-for-institutional-diversity/making-space-for-them-her-him-and-prefer-not-to-disclose-in-group-settings-why-1deb8c3d6b86" target="_blank">Making Space for Them, Her, Him, and ‘Prefer not to Disclose’ in Group Settings: Why Pronoun-Sharing is Important but Must Remain Optional</a>" for the <a href="https://lsa.umich.edu/ncid" target="_blank">National Center for Institutional Diversity (NCID)</a>'s <a href="https://medium.com/national-center-for-institutional-diversity/nonbinary-identities-and-individuals-in-research-community-and-the-academy-e2b8a3f23684" target="_blank">blog series on Nonbinary Identities and Individuals in Research, Community, and the Academy</a>.<p
+			<h3 class="news-card-header">Essay on pronoun sharing and disclosure</h3>
+			<h4 class="news-card-date">June 29, 2019</h4>
+			<p class="news-card-text">Lee Airton and I wrote an essay titled "<a href="https://medium.com/national-center-for-institutional-diversity/making-space-for-them-her-him-and-prefer-not-to-disclose-in-group-settings-why-1deb8c3d6b86" target="_blank">Making Space for Them, Her, Him, and ‘Prefer not to Disclose’ in Group Settings: Why Pronoun-Sharing is Important but Must Remain Optional</a>" for the <a href="https://lsa.umich.edu/ncid" target="_blank">National Center for Institutional Diversity (NCID)</a>'s <a href="https://medium.com/national-center-for-institutional-diversity/nonbinary-identities-and-individuals-in-research-community-and-the-academy-e2b8a3f23684" target="_blank">blog series on Nonbinary Identities and Individuals in Research, Community, and the Academy</a>.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="guidelines">-->
-	<div id="news-card">
-		<h3>HCI Guidelines for Gender Equity and Inclusivity now online</h3>
-		<h4>June 3, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://www.morgan-klaus.com/sigchi-gender-guidelines" target="_blank">
+				<img class="img-class-news" src="images/guidelines.png" alt="HCI guidelines" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://www.morgan-klaus.com/sigchi-gender-guidelines" target="_blank"><img src="images/guidelines.png" alt="HCI guidelines" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>I was part of a team of researchers, led by Morgan Klaus Scheuerman, who recently released a set of <a href="https://www.morgan-klaus.com/sigchi-gender-guidelines" target="_blank">HCI Guidelines for Gender Equity and Inclusivity</a>. We hope that this will be a helpful tool for researchers and writers who want to be respectful and inclusive about gender, but don't know how.</p>
+			<h3>HCI Guidelines for Gender Equity and Inclusivity now online</h3>
+			<h4 class="news-card-date">June 3, 2019</h4>
+			<p class="news-card-text">I was part of a team of researchers, led by Morgan Klaus Scheuerman, who recently released a set of <a href="https://www.morgan-klaus.com/sigchi-gender-guidelines" target="_blank">HCI Guidelines for Gender Equity and Inclusivity</a>. We hope that this will be a helpful tool for researchers and writers who want to be respectful and inclusive about gender, but don't know how.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="paper_jamia">-->
-	<div id="news-card">
-		<h3>Paper accepted for JAMIA</h3>
-		<h4>April 19, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank">
+				<img class="img-class-news" src="images/JAMIA.png" alt="Jamia logo" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank"><img src="images/JAMIA.png" alt="Jamia logo" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>I'm very excited that my paper "<a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank">Mapping Gender Transition Sentiment Patterns via Social Media Data: Toward Decreasing Transgender Mental Health Disparities</a>" was accepted for publication in the <a href="https://academic.oup.com/jamia" target="_blank">Journal of the American Medical Informatics Association (JAMIA)</a>, as part of the forthcoming special issue on "Health Informatics and Health Equity: Improving Our Reach and Impact."</p>
+			<h3 class="news-card-header">Paper accepted for JAMIA</h3>
+			<h4 class="news-card-date">April 19, 2019</h4>
+			<p class="news-card-text">I'm very excited that my paper "<a href="https://academic.oup.com/jamia/article-abstract/26/8-9/749/5497782" target="_blank">Mapping Gender Transition Sentiment Patterns via Social Media Data: Toward Decreasing Transgender Mental Health Disparities</a>" was accepted for publication in the <a href="https://academic.oup.com/jamia" target="_blank">Journal of the American Medical Informatics Association (JAMIA)</a>, as part of the forthcoming special issue on "Health Informatics and Health Equity: Improving Our Reach and Impact."</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="grant_women_gender">-->
-	<div id="news-card">
-		<h3>Grant funding received from Institute for Research on Women &amp; Gender</h3>
-		<h4>April 19, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/IRWG.jpg" alt="IRWG logo" />
+		</div>
 		<div class="news-container">
-			<img src="images/IRWG.jpg" alt="IRWG logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-			<p>I received an <a href="https://irwg.umich.edu/" target="_blank">Institute for Research on Women and Gender</a> Transgender Health and Empowerment Seed Grant for my proposal "Researching and Improving New Online Spaces to Support Transgender Wellbeing." This research will be conducted with community partner Briar Baron and trans time.</p>
+			<h3 class="news-card-header">Grant funding received from Institute for Research on Women &amp; Gender</h3>
+			<h4 class="news-card-date">April 19, 2019</h4>
+			<p class="news-card-text">I received an <a href="https://irwg.umich.edu/" target="_blank">Institute for Research on Women and Gender</a> Transgender Health and Empowerment Seed Grant for my proposal "Researching and Improving New Online Spaces to Support Transgender Wellbeing." This research will be conducted with community partner Briar Baron and trans time.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="work_in_progress">-->
-	<div id="news-card">
-		<h3>Work-in-progress paper accepted for DIS</h3>
-		<h4>April 19, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/DIS19.png" alt="DIS logo" />
+		</div>
 		<div class="news-container">
-			<img src="images/DIS19.png" alt="DIS logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-			<p>"<a href="https://dl.acm.org/citation.cfm?id=3323898" target="_blank">Designing Technology to Support Safety for Transgender Women &amp; Non-Binary People of Color</a>," a work-in-progress paper I co-authored with Denny Starks (lead author) and Tawanna Dillahunt, has been accepted for <a href="https://dis2019.com/" target="_blank">DIS 2019</a>.</p>
+			<h3 class="news-card-header">Work-in-progress paper accepted for DIS</h3>
+			<h4 class="news-card-date">April 19, 2019</h4>
+			<p class="news-card-text">"<a href="https://dl.acm.org/citation.cfm?id=3323898" target="_blank">Designing Technology to Support Safety for Transgender Women &amp; Non-Binary People of Color</a>," a work-in-progress paper I co-authored with Denny Starks (lead author) and Tawanna Dillahunt, has been accepted for <a href="https://dis2019.com/" target="_blank">DIS 2019</a>.</p>
 		</div>
 	</div>
 <br/>
 
-	<div id="news-card">
-		<h3>Grant funding received from National Center for Institutional Diversity</h3>
-		<h4>March 7, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/NCID.jpg" alt="NCID logo" />
+		</div>
 		<div class="news-container">
-			<img src="images/NCID.jpg" alt="NCID logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-			<p>I received a <a href="https://lsa.umich.edu/ncid" target="_blank">National Center for Institutional Diversity</a> Grant to Support Research and Scholarship for Social Change for my proposal "Major Life Events and Social Media in Contemporary Society: Understanding Social Readjustment for Marginalized Populations." This research will be conducted with co-PI Nicole Ellison and undergraduate research assistants AJ Carter, Shanley Corvite, Alexxus Lige, and Brookelyn Wheeler.
+			<h3 class="news-card-header">Grant funding received from National Center for Institutional Diversity</h3>
+			<h4 class="news-card-date">March 7, 2019</h4>
+			<p class="news-card-text">I received a <a href="https://lsa.umich.edu/ncid" target="_blank">National Center for Institutional Diversity</a> Grant to Support Research and Scholarship for Social Change for my proposal "Major Life Events and Social Media in Contemporary Society: Understanding Social Readjustment for Marginalized Populations." This research will be conducted with co-PI Nicole Ellison and undergraduate research assistants AJ Carter, Shanley Corvite, Alexxus Lige, and Brookelyn Wheeler.
 		</div>
 	</div>
 <br/>
 
 <!--<div class="tochi_paper">-->
-	<div id="news-card">
-		<h3>TOCHI paper will be presented at CHI 2019</h3>
-		<h4>March 7, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/CHI19.png" alt="CHI logo" />
+		</div>
 		<div class="news-container">
-			<img src="images/CHI19.png" alt="CHI logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-			<p>"<a href="https://dl.acm.org/citation.cfm?id=3234942" target=_blank>Social Support, Reciprocity, and Anonymity in Responses to Sexual Abuse Disclosures
+			<h3 class="news-card-header">TOCHI paper will be presented at CHI 2019</h3>
+			<h4 class="news-card-date">March 7, 2019</h4>
+			<p class="news-card-text">"<a href="https://dl.acm.org/citation.cfm?id=3234942" target=_blank>Social Support, Reciprocity, and Anonymity in Responses to Sexual Abuse Disclosures
 			on Social Media</a>," a <a href="https://tochi.acm.org/" target="_blank">TOCHI</a> paper I co-authored with Nazanin Andalibi (lead author), Munmun De Choudhury, and Andrea Forte, will be presented at <a href="https://chi2019.acm.org/" target="_blank">CHI 2019</a> by Nazanin Andalibi.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="paper_chi">-->
-	<div id="news-card">
-		<h3>Workshop paper accepted for CHI 2019</h3>
-		<h4>March 7, 2019</h4>
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/CHI19.png" alt="CHI logo" />
+		</div>
 		<div class="news-container">
-			<img src="images/CHI19.png" alt="CHI logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-			<p>My workshop paper titled "Gender Inclusivity at SIGCHI" has been accepted for the <a href="https://chinclusive.glitch.me/" target="_blank">CHInclusion workshop</a> at <a href="https://chi2019.acm.org/" target="_blank">CHI 2019</a>.</p>
+			<h3 class="news-card-header">Workshop paper accepted for CHI 2019</h3>
+			<h4 class="news-card-date">March 7, 2019</h4>
+			<p class="news-card-text">My workshop paper titled "Gender Inclusivity at SIGCHI" has been accepted for the <a href="https://chinclusive.glitch.me/" target="_blank">CHInclusion workshop</a> at <a href="https://chi2019.acm.org/" target="_blank">CHI 2019</a>.</p>
 		</div>
 	</div>
 <br/>
 
 <!--<div class="tenure_track">-->
-	<div id="news-card">
-		<h3>Accepted tenure track position at University of Michigan!</h3>
-		<h4>February 21, 2019>
+	<div class="news-card">
+		<div class="images-news">
+			<a href="images/defense.jpg" target="_blank">
+				<img class="img-class-news" src="images/UM.png" alt="University of Michigan logo" />
+			</a>
+		</div>
 		<div class="news-container">
-			<a href="images/defense.jpg" target="_blank"><img src="images/UM.png" alt="University of Michigan logo" style="width:80px; margin-right:10px; margin-top:4px;"></a>
-			<p>I am excited to be remaining at <a href="https://www.si.umich.edu/" target="_blank">University of Michigan School of Information</a> and will be starting as a tenure-track Assistant Professor in September 2019!</p>
+			<h3 class="news-card-header">Accepted tenure track position at University of Michigan!</h3>
+			<h4 class="news-card-date">February 21, 2019>
+			<p class="news-card-text">I am excited to be remaining at <a href="https://www.si.umich.edu/" target="_blank">University of Michigan School of Information</a> and will be starting as a tenure-track Assistant Professor in September 2019!</p>
 		</div>
 	</div>
 <br/>
 
-<div clas="ica_panel_accepted">
-		<h4>ICA panel accepted</h4>
-		<div class="text">
-		<img src="images/ICA.png" alt="ICA conference logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I will be presenting a paper called "Challenging 'Getting Better' Media Narratives
-		with Intersectional Transgender Lived Experiences" as part of an accepted panel at
-		the <a href="https://www.icahdq.org/page/2019Conference" target="_blank">2019
-		International Communication Association (ICA) Conference</a> called “Rethinking (and
-		Retheorizing) Transgender Media Representation,” organized by Thomas J Billard.
-		<br>
-		<div class="dateText">February 21, 2019</div>
+<!--<div class="ica_panel_accepted">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/ICA.png" alt="ICA conference logo" />
 		</div>
-</div>
+		<div class="news-container">
+			<h3 class="news-card-header">ICA panel accepted</h3>
+			<h4 class="news-card-date">February 21, 2019</h4>
+			<p class="news-card-text">I will be presenting a paper called "Challenging 'Getting Better' Media Narratives with Intersectional Transgender Lived Experiences" as part of an accepted panel at the <a href="https://www.icahdq.org/page/2019Conference" target="_blank">2019 International Communication Association (ICA) Conference</a> called “Rethinking (and Retheorizing) Transgender Media Representation,” organized by Thomas J Billard.</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="paper_assist_proceedings">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/ASIST.png" alt="Assist logo" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Short paper published in ASIST Proceedings</h3>
+			<h4 class="news-card-date">February 21, 2019</h4>
+			<p class="news-card-text">"<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/pra2.2018.14505501133" target="_blank">Helpful Information to Whom? An Intersectional Critique of the ‘It Gets Better Project'</a>," a short paper I co-authored with Blake Hawkins (lead author) and Nazanin Andalibi, has been published in <a href="https://onlinelibrary.wiley.com/journal/23739231" target="_blank">Proceedings of the Association for Information Science and Technology (ASIST)</a>.</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="m_cubed_program">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/mcubed.png" alt="M-cubed logo" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Grant funding received from University of Michigan's M-Cubed Program</h3>
+			<h4 class="news-card-date">December 9, 2018</h4>
+			<p class="news-card-text">Along with collaborators <a href="https://shannakattari.wordpress.com/" target="_blank">Shanna Kattari</a> from UM's School of Social Work and <a href="https://sph.umich.edu/faculty-profiles/gamarel-kristi.html" target="_blank">Kristi Gamarel</a> from UM's School of Public Health, I received a research grant from U-M's <a href="https://mcubed.umich.edu/" target="_blank">M-Cubed</a> program for the project "Paging Dr. YouTube: Exploring How Trans/Nonbinary Individuals Use Technology &amp; Social Media to Access Trans Health Information."</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="atlantic_article">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/atlantic.png" alt="tumblr logo" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Research featured in Atlantic article</h3>
+			<h4 class="news-card-date">December 7, 2018</h4>
+			<p class="news-card-text">My research was recently featured in The Atlantic's story "<a href="https://www.theatlantic.com/technology/archive/2018/12/tumblr-adult-content-porn/577471/" target="_blank">What Tumblr's Porn Ban Really Means</a>" by Steven W. Thrasher.</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="honorable_mention">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/CSCW18.jpg" alt="CSCW logo" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">CSCW 2018 Best Paper Honorable Mention!</h3>
+			<h4 class="news-card-date">October 12, 2018</h4>
+			<p class="news-card-text">My paper "<a href="PDFs/HaimsonSocialTransitionMachinery.pdf" target="_blank">Social Media as Social Transition Machinery</a>" received a Best Paper Honorable Mention award at <a href="http://cscw.acm.org/2018/" target="_blank">CSCW 2018</a>!</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="mashable_article">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/mashable.jpg" alt="decorative" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Quoted in Mashable article</h3>
+			<h4 class="news-card-date">August 27, 2018</h4>
+			<p class="news-card-text">I was recently quoted in Mashable's story "<a href="https://mashable.com/2018/08/23/google-lgbtq-community-allies-help/#x11MMfQ62mq3" target="_blank">Asking people to Google their questions about the LGBTQ community is appealing — but risky</a>" by Heather Dockray.</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="paper_accepted_cscw">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/CSCW18.jpg" alt="CSCW logo" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Paper accepted for CSCW</h3>
+			<h4 class="news-card-date">August 13, 2018</h4>
+			<p class="news-card-text">I'm very excited that my first paper from my dissertation research, and my first solo-authored paper, was accepted for <a href="http://cscw.acm.org/2018/" target="_blank">CSCW 2018</a>! The paper is titled "<a href="PDFs/HaimsonSocialTransitionMachinery.pdf" target="_blank">Social Media as Social Transition Machinery</a>." Looking forward to sharing this work with everyone at the conference in November!</p>
+		</div>
+	</div>
+<br/>
+
+<!--<div class="paper_accepted_tochi">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/tochi.jpeg" alt="CHI logo" />
+		</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Paper accepted for TOCHI</h3>
+			<h4 class="news-card-date">July 5, 2018</h4>
+			<p class="news-card-text">"<a href="https://dl.acm.org/citation.cfm?id=3234942" target="_blank">Social Support, Reciprocity, and Anonymity in Responses to Sexual Abuse Disclosures on Social Media</a>," a paper I co-authored with Nazanin Andalibi (lead author), Munmun De Choudhury, and Andrea Forte, has been accepted to <a href="https://tochi.acm.org/" target="_blank">ACM Transactions on Computer-Human Interaction (TOCHI)</a>!</p>
+		</div>
+	</div>
 <br>
 
-<div class="paper_assist_proceedings">
-		<h4>Short paper published in ASIST Proceedings</h4>
-		<div class="text">
-		<img src="images/ASIST.png" alt="Assist logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		"<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/pra2.2018.14505501133" target=_blank">Helpful Information
-		to Whom? An Intersectional Critique of the ‘It Gets Better Project'</a>," a short paper
-		I co-authored with Blake Hawkins (lead author) and Nazanin Andalibi, has been
-		published in <a href="https://onlinelibrary.wiley.com/journal/23739231" target="_blank">Proceedings of the
-		Association for Information Science and Technology (ASIST)</a>.
-		<br>
-		<div class="dateText">February 21, 2019</div>
+<!--<div class="first_monday">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/QIS.jpeg" alt="decorative" />
 		</div>
-</div>
-<br>
+		<div class="news-container">
+			<h3 class="news-card-header">Piece published in First Monday</h3>
+			<h4 class="news-card-date">July 5, 2018</h4>
+			<p class="news-card-text">My piece "Trans identity and digital spaces" is published as part of"<a href="http://firstmonday.org/ojs/index.php/fm/article/view/9255/7458" target="_blank">A conversation: Queer digital media resources and research</a>," along with Mia Fischer, Carmen Rios, Adrienne Shaw, Mitali Thakor, Jen Jack Gieseking, and Daniel Cockayne. This is part of the First Monday <a href="http://firstmonday.org/ojs/index.php/fm/issue/view/602/showToc" target="_blank">special issue on Queer Internet Studies</a>. Thanks so much to Jen Jack Gieseking, Jessa Lingel, and Daniel Cockayne for their hard work putting this together!</p>
+		</div>
+	</div>
+<br/>
 
-<div class="m_cubed_program">
-		<h4>Grant funding received from University of Michigan's M-Cubed Program</h4>
-		<div class="text">
-		<img src="images/mcubed.png" alt="M-cubed logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		Along with collaborators <a href="https://shannakattari.wordpress.com/" target="_blank">Shanna Kattari</a>
-		from UM's School of Social Work and <a href="https://sph.umich.edu/faculty-profiles/gamarel-kristi.html" target="_blank">Kristi Gamarel</a>
-		from UM's School of Public Health, I received a research grant from U-M's <a href="https://mcubed.umich.edu/" target="_blank">M-Cubed</a>
-		program for the project "Paging Dr. YouTube: Exploring How Trans/Nonbinary
-		Individuals Use Technology & Social Media to Access Trans Health Information."
-		<br>
-		<div class="dateText">December 9, 2018</div>
+<!--<div class="joining_michigan">-->
+	<div class="news-card">
+		<div class="images-news">
+			<a href="images/defense.jpg" target="_blank">
+				<img class="img-class-news" src="images/UM.png" alt="University of Michigan logo" />
+			</a>
 		</div>
-</div>
-<br>
+		<div class="news-container">
+			<h3 class="news-card-header">Joining University of Michigan!</h3>
+			<h4 class="news-card-date">April 20, 2018</h4>
+			<p class="news-card-text">I am excited to announce that I will be joining <a href="https://www.si.umich.edu/" target="_blank">University of Michigan's School of Information</a> in Fall 2018 as a President's Postdoctoral Fellow! I'm very much looking forward to being part of the amazing community of researchers at UMSI and starting this next phase of my academic career.
+		</div>
+	</div>
+<br/>
 
-<div class="atlantic_article">
-		<h4>Research featured in Atlantic article</h4>
-		<div class="text">
-		<img src="images/atlantic.png" alt="tumblr logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		My research was recently featured in The Atlantic's story "<a href="https://www.theatlantic.com/technology/archive/2018/12/tumblr-adult-content-porn/577471/" target="_blank">What
-		Tumblr's Porn Ban Really Means</a>" by Steven W. Thrasher.
-		<br>
-		<div class="dateText">December 7, 2018</div>
+<!--<div class="dissertation_defense">-->
+	<div class="news-card">
+		<div class="images-news">
+			<a href="images/defense.jpg" target="_blank">
+				<img class="img-class-news" src="images/defense.jpg" alt="Oliver Haimson standing with colleagues" />
+			</a>
 		</div>
-</div>
-<br>
+		<div class="news-container">
+			<h3 class="news-card-header">Dissertation defense!</h3>
+			<h4 class="news-card-date">February 27, 2018</h4>
+			<p class="news-card-text">I successfully defended my dissertation "<a href="https://escholarship.org/uc/item/19c235q0" target="_blank">The Social Complexities of Transgender Identity Disclosure on Social Media</a>" on February 22, and have now completed my PhD! Many thanks to my committee members - Gillian Hayes, Gloria Mark, Andrea Forte, and Bonnie Ruberg - for all of their support and feedback throughout the years.</p>
+		</div>
+	</div>
+<br/>
 
-<div class="honorable_mention">
-		<h4>CSCW 2018 Best Paper Honorable Mention!</h4>
-		<div class="text">
-		<img src="images/CSCW18.jpg" alt="CSCW logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		My paper "<a href="PDFs/HaimsonSocialTransitionMachinery.pdf" target="_blank">Social Media
-		as Social Transition Machinery</a>" received a
-		Best Paper Honorable Mention award at
-		<a href="http://cscw.acm.org/2018/" target="_blank">CSCW 2018</a>!
-		<br>
-		<div class="dateText">October 12, 2018</div>
+<!--<div class="workshop_papers_chi">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/CHI18.png" alt="CHI logo" />
 		</div>
-</div>
-<br>
+		<div class="news-container">
+			<h3 class="news-card-header">Workshop papers accepted for CHI 2018</h3>
+			<h4 class="news-card-date">February 27, 2018</h4>
+			<p class="news-card-text">I have two workshop papers accepted for <a href="https://chi2018.acm.org/" target="_blank">CHI 2018</a>, both led by <a href="https://blakehawkins.org" target="_blank">Blake Hawkins</a>: "<a href="http://mentalhealth.media.mit.edu/wp-content/uploads/sites/46/2018/04/CMH2018_paper_32.pdf" target="_blank">It Gets Better, But it Takes More Than a YouTube Video: Reconsidering Online Mental Health Campaigns</a>," co-authored with Nazanin Andalibi, has been accepted for the <a href="http://mentalhealth.media.mit.edu/" target="_blank">CHI 2018 Symposium on Computing and Mental Health</a>, and "Creating Online Places of Care: The Experiences of Transgender People Using Tumblr to Maintain Positive Mental Health" has been accepted for the <a href="https://d4sw.wordpress.com/" target="_blank">CHI 2018 Design for Sexual Wellbeing</a> workshop.</p>
+		</div>
+	</div>
+<br/>
 
-<div class="mashable_article">
-		<h4>Quoted in Mashable article</h4>
-		<div class="text">
-		<img src="images/mashable.jpg" alt="decorative" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I was recently quoted in Mashable's story "<a href="https://mashable.com/2018/08/23/google-lgbtq-community-allies-help/#x11MMfQ62mq3" target="_blank">Asking
-		people to Google their questions about the LGBTQ community is appealing — but risky</a>" by
-		Heather Dockray.
-		<br>
-		<div class="dateText">August 27, 2018</div>
+<!--<div class="james_harvey_award">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/UCI.jpeg" alt="University of California Irvine logo" />
 		</div>
-</div>
-<br>
+		<div class="news-container">
+			<h3 class="news-card-header">James Harvey Scholar Award</h3>
+			<h4 class="news-card-date">January 19, 2018</h4>
+			<p class="news-card-text">I am extremely honored to receive the 2018 James Harvey Scholar Award, for graduate research on LGBTQ topics!</p>
+		</div>
+	</div>
+<br/>
 
-<div class="paper_accepted_cscw">
-		<h4>Paper accepted for CSCW</h4>
-		<div class="text">
-		<img src="images/CSCW18.jpg" alt="CSCW logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I'm very excited that my first paper from my dissertation research, and my first
-		solo-authored paper, was accepted for <a href="http://cscw.acm.org/2018/" target="_blank">CSCW 2018</a>!
-		The paper is titled "<a href="PDFs/HaimsonSocialTransitionMachinery.pdf" target="_blank">Social Media
-		as Social Transition Machinery</a>."
-		Looking forward to sharing this work with everyone at the conference in November!
-		<br>
-		<div class="dateText">August 13, 2018</div>
+<!--<div class="digital_trans_reading">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/transitionmachinery.png" alt="gears turning" />
 		</div>
-</div>
-<br>
+		<div class="news-container">
+			<h3 class="news-card-header">
+				<a href="digitaltrans.html" target="_blank">Digital trans reading list!</a>
+			</h3>
+			<h4 class="news-card-date">January 2, 2018</h4>
+			<p class="news-card-text">In the past few years as I’ve been working on my PhD research about gender transition and social media, I have compiled a list of all of the published research I have come across about transgender people and digital technology, digital and social media, and the Internet. <a href="digitaltrans.html" target="_blank">The list is available here</a> and is sortable by author, year, title, item type, or publication venue. I wanted to share my list so that it can be a resource for scholars who are also studying these topics, or who may want to start doing research in this area!</p>
+		</div>
+	</div>
+<br/>
 
-<div class="paper_accepted_tochi">
-		<h4>Paper accepted for TOCHI</h4>
-		<div class="text">
-		<img src="images/tochi.jpeg" alt="CHI logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		"<a href="https://dl.acm.org/citation.cfm?id=3234942" target=_blank">Social Support, Reciprocity, and Anonymity in Responses to Sexual Abuse Disclosures
-		on Social Media</a>," a paper I co-authored with Nazanin Andalibi (lead author), Munmun De
-		Choudhury, and Andrea Forte, has been accepted to <a href="https://tochi.acm.org/" target="_blank">ACM
-		Transactions on Computer-Human Interaction (TOCHI)</a>!
-		<br>
-		<div class="dateText">July 5, 2018</div>
+<!--<div class="article_xrds">-->
+	<div class="news-card">
+		<div class="images-news">
+			<img class="img-class-news" src="images/xrds.png" alt="XRDS logo" />
 		</div>
-</div>
-<br>
-
-<div class="first_monday">
-		<h4>Piece published in First Monday</h4>
-		<div class="text">
-		<img src="images/QIS.jpeg" alt="decorative" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		My piece "Trans identity and digital spaces" is published as part of
-		"<a href="http://firstmonday.org/ojs/index.php/fm/article/view/9255/7458" target="_blank">A
-		conversation: Queer digital media resources and research</a>," along with Mia Fischer,
-		Carmen Rios, Adrienne Shaw, Mitali Thakor, Jen Jack Gieseking, and Daniel Cockayne.
-		This is part of the First Monday <a href="http://firstmonday.org/ojs/index.php/fm/issue/view/602/showToc" target="_blank">special
-		issue on Queer Internet Studies</a>. Thanks so much to Jen Jack Gieseking, Jessa
-		Lingel, and Daniel Cockayne for their hard work putting this together!
-		<br>
-		<div class="dateText">July 5, 2018</div>
+		<div class="news-container">
+			<h3 class="news-card-header">Feature article in XRDS Magazine</h3>
+			<h4 class="news-card-date">January 2, 2018</h4>
+			<p class="news-card-text">I have a feature article in the new issue of <a href="http://xrds.acm.org/current-issue.cfm" target="_blank">XRDS: Crossroads, The ACM Magazine for Students</a>, titled"<a href="https://dl.acm.org/citation.cfm?id=3155118&CFID=1020345247&CFTOKEN=45872218" target="_blank">Digitaland Physical Barriers to Changing Identities</a>."</p>
 		</div>
-</div>
-<br>
-
-<div class="joining_michigan">
-		<h4>Joining University of Michigan!</h4>
-		<div class="text">
-		<a href="images/defense.jpg" target="_blank"><img src="images/UM.png" alt="University of Michigan logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I am excited to announce that I will be joining <a href="https://www.si.umich.edu/" target="_blank">University of Michigan's
-		School of Information</a> in Fall 2018 as a President's Postdoctoral Fellow! I'm very
-		much looking forward to being part of the amazing community of researchers at UMSI
-		and starting this next phase of my academic career.
-		<br>
-		<div class="dateText">April 20, 2018</div>
-		</div>
-</div>
-<br>
-
-<div class="dissertation_defense">
-		<h4>Dissertation defense!</h4>
-		<div class="text">
-		<a href="images/defense.jpg" target="_blank"><img src="images/defense.jpg" alt="Oliver Haimson standing with colleagues" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I successfully defended my dissertation "<a href="https://escholarship.org/uc/item/19c235q0" target="_blank">The Social Complexities of Transgender
-		Identity Disclosure on Social Media</a>" on February 22, and have now completed my PhD!
-		Many thanks to my committee members - Gillian Hayes, Gloria Mark, Andrea Forte, and Bonnie Ruberg -
-		for all of their support and feedback throughout the years.
-		<br>
-		<div class="dateText">February 27, 2018</div>
-		</div>
-</div>
-<br>
-
-<div class="workshop_papers_chi">
-		<h4>Workshop papers accepted for CHI 2018</h4>
-		<div class="text">
-		<img src="images/CHI18.png" alt="CHI logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I have two workshop papers accepted for <a href="https://chi2018.acm.org/" target="_blank">CHI 2018</a>,
-		both led by <a href="https://blakehawkins.org" target="_blank">Blake Hawkins</a>:
-		"<a href="http://mentalhealth.media.mit.edu/wp-content/uploads/sites/46/2018/04/CMH2018_paper_32.pdf" target="_blank">It Gets Better, But it Takes More Than a YouTube Video: Reconsidering Online Mental Health Campaigns</a>,"
-		co-authored with Nazanin Andalibi, has been accepted for the
-		<a href="http://mentalhealth.media.mit.edu/" target="_blank">CHI 2018 Symposium on Computing and Mental Health</a>,
-		and "Creating Online Places of Care: The Experiences of Transgender People Using
-		Tumblr to Maintain Positive Mental Health" has been accepted for the
-		<a href="https://d4sw.wordpress.com/" target="_blank">CHI 2018 Design for Sexual Wellbeing</a>
-		workshop.
-		<br>
-		<div class="dateText">February 27, 2018</div>
-		</div>
-</div>
-<br>
-
-<div class="james_harvey_award">
-		<h4>James Harvey Scholar Award</h4>
-		<div class="text">
-		<img src="images/UCI.jpeg" alt="University of California Irvine logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I am extremely honored to receive the 2018 James Harvey Scholar Award, for graduate
-		research on LGBTQ topics!
-		<br>
-		<div class="dateText">January 19, 2018</div>
-		</div>
-</div>
-<br>
-
-<div class="digital_trans_reading">
-		<h4><a href="digitaltrans.html" target="_blank">Digital trans reading list!</a></h4>
-		<div class="text">
-		<img src="images/transitionmachinery.png" alt="gears turning" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		In the past few years as I’ve been working on my PhD research about gender transition
-		and social media, I have compiled a list of all of the published research I have
-		come across about transgender people and digital technology, digital and social media,
-		and the Internet. <a href="digitaltrans.html" target="_blank">The list is available here</a>
-		and is sortable by author, year, title, item type, or publication venue. I wanted to
-		share my list so that it can be a resource for scholars who are also studying these
-		topics, or who may want to start doing research in this area!
-		<br>
-		<div class="dateText">January 2, 2018</div>
-		</div>
-</div>
-<br>
-
-<div class="article_xrds">
-		<h4>Feature article in XRDS Magazine</h4>
-		<div class="text">
-		<table><tr><td valign="top"><img src="images/xrds.png" alt="XRDS logo" style="width:80px; margin-right:10px; margin-top:4px;"/>
-		I have a feature article in the new issue of
-		<a href="http://xrds.acm.org/current-issue.cfm" target="_blank">XRDS:
-		Crossroads, The ACM Magazine for Students</a>, titled
-		"<a href="https://dl.acm.org/citation.cfm?id=3155118&CFID=1020345247&CFTOKEN=45872218" target="_blank">Digital
-		and Physical Barriers to Changing Identities</a>."
-		<br>
-		<div class="dateText">January 2, 2018</div>
-		</div>
-</div>
-<br>
+	</div>
+<br/>
 
 <div class="paper_gender_it_2018">
 		<h4>Paper accepted for Gender & IT 2018</h4>
