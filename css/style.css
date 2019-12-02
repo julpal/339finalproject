@@ -273,6 +273,11 @@ h3.card-header {
   display: flex;
   flex-direction: column;
 }
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 #work {
   margin: 0 auto;
 }
