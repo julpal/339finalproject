@@ -277,6 +277,11 @@ h3.card-header {
   text-align: left;
 }
 
+.pub-grid{
+  display: flex; 
+  flex-direction: column;
+}
+
 
 
 
@@ -308,9 +313,31 @@ nav {
   z-index: 1;
   margin-top: -8vh;
   margin-bottom: -9vh;
+}
+}
 
 
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
-} */
+    .pub-grid{
+      display: grid;
+      grid-template-columns: 50% 50%; 
+      /* grid-template-rows: 100px auto auto auto auto 100px; */
+      grid-column-gap: 10px; 
+      row-gap: 15px; 
+      width: 100vw;
+    }
+    
+    .journal-pub-cards{
+      display: flex; 
+      flex-direction: column;
+    }
+    
+    .full-pub-cards{
+      display: flex; 
+      flex-direction: column; 
+    }
+      /*add this to css*/ 
+    
+} 
