@@ -4,7 +4,8 @@
 
 <!--  personal webpage
       Created by: Oliver Haimson
-      2013 -->
+	  2013 
+	  Redesigned 2019-->
 
 <meta charset="utf-8" />
 <meta name="title" content="Oliver Haimson">
@@ -18,6 +19,16 @@
 <link rel="icon" type="image/png" href="images/olh.png" />
 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -36,7 +47,7 @@
 
 <body>
 
-<div class="link-container">
+
 	<nav>
 		<div id="logo" class="navlink">
         	<a href="index.html">
@@ -56,37 +67,12 @@
        		<a href="https://medium.com/@haimson">Blog</a>
       	</div>
 	</nav>
-</div>
-<!--
-	<nav>
-	<a href="index.html">home</a></br>
-	<div id="special"><a href="publications.html">publications</a></br></div>
-	<a href="education.html">education</a></br>
-	<a href="https://medium.com/@haimson" target="_blank">blog</a></br>
-	<a href="PDFs/HaimsonCV.pdf" target="_blank">cv</a>
-	</nav>
--->
+
+
 	<header>
 		<h1>OLIVER L. HAIMSON, Ph.D.</h1>
 		<h2>I am a social computing researcher focused on changing identities on social media during life transistions, with a primary research goal of impacting technological inclusion of marginalized users.</h2>
 	</header>
-
-<!--<div class="info">-->
-<!--		<a href="index.html"><img src="haimson.jpg" alt="Oliver Haimson" style="width:259px"/><br>-->
-<!--		-->
-<!--
-		<h10>Assistant Professor</h10><br>
-		<a href="https://www.si.umich.edu/" target="_blank"><img src="images/SI.png" style="width:259px" alt="School of Information"/></a>
--->
-<!--</div>-->
-
-<!--
-	<div class="reading_list">
-	   <a href="digitaltrans.html" target="_blank"><h7>DIGITAL TRANS READING LIST 📘</h7></a></br>
-	</div>
--->
-
-
 
 	<div class="about">
 		<a href="index.html"><img src="images/haimson.jpeg" alt="Oliver Haimson" style="width:259px"/>
@@ -94,23 +80,29 @@
     		<p>I am an Assistant Professor at <a href="https://www.umich.edu/" target="_blank">University of Michigan</a> <a href="https://www.si.umich.edu/" target="_blank">School of Information</a> (UMSI). Prior to this position, I was a President's Postdoctoral Fellow at UMSI during 2018-2019. I conduct social computingresearch focused on how people present and disclose changing identities on social media during life transitions, with a primary research goal of impacting technological inclusion of marginalized users. One of my main research areas is transgender identity disclosure and presentation on social media. I am a recipient of a National Science Foundation Graduate Research Fellowship, a Rob Kling Memorial Fellowship, and a Eugene Cota-Robles Fellowship.</p>
 			<p>I earned my Ph.D. in Information and Computer Science in 2018 from the <a href="http://www.informatics.uci.edu" target="_blank">Informatics Department</a> at <a href="http://www.uci.edu" target="_blank"> University of California, Irvine</a>’s <a href="http://www.ics.uci.edu" target="_blank"> Bren School of Information and Computer Sciences</a>, where I worked with <a href="http://www.gillianhayes.com" target="_blank"> Gillian Hayes</a>. I received my M.S. in Information and Computer Science from <a href="http://www.informatics.uci.edu" target="_blank">UCI Informatics</a>, and my B.S. in Economics at <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a>. I also participated in the <a href="http://www.ischool-inclusion.org" target="_blank"> iSchool Inclusion Institute (i3)</a>. Prior to my academic pursuits, I founded and managed independent bookstores for a number of years. I also toured and recorded as guitarist, vocalist, and songwriter in several rock bands. I am a big fan of most animals, including <a href="images/cat.jpg" target="_blank">cats</a>, which I have, and dogs, which I hope to have in the future.</p>
 	</div>
-	<div class="groups-container">
-		<h3>Here are some of the groups I am affiliated with at University of Michigan:</h3>
-
-    	<a href="http://socialmedia.si.umich.edu/" target="_blank"><img src="images/SMRL.png" alt="Social Media SI" style="width:150px"/</a>
-
-    	<a href="https://srgcollective.com/" target="_blank"><img src="images/SRG.png" alt="SRG Collective" style="width:100px"/>
-
-<!--			<br><a href="https://srgcollective.com/" target="_blank"><b>Sexuality Relationships Gender Research Collective</b></a>-->
-
-    	<a href="https://lsa.umich.edu/digitalstudies" target="_blank"><img src="images/digitalstudies.png" alt="Digital Studies" style="width:285px"/></a>
-
-    	<a href="http://esc.umich.edu/" target="_blank"><img src="images/ESC.png" alt="ESC" style="width:285px"/></a>
-
-    	<a href="https://csmr.umich.edu/" target="_blank"><img src="images/CSMR.jpg" alt="CSMR" style="width:285px"/></a>
-
-    	<a href="https://lsa.umich.edu/ncid/engagement-opportunities/diversity-scholars-network.html" target="_blank"><img src = "" alt = ""</img></a>
-	</div>
+	<h3>
+			Here are some of the groups I am affiliated with at University of
+			Michigan:
+		  </h3>
+		  <div class="container">
+			<a class="customer-logos slider">
+			  <div class="slide">
+				<img src="images/SRG.png" style="width: 100px;" />
+			  </div>
+			  <div class="slide">
+				<img src="images/SMRL.png" style="width: 150px;" />
+			  </div>
+			  <div class="slide">
+				<img src="images/digitalstudies.png" style="width: 285px; " />
+			  </div>
+			  <div class="slide">
+				<img src="images/ESC.png" style="width: 285px;" />
+			  </div>
+			  <div class="slide">
+				<img src="images/CSMR.png" style="width: 285px;" />
+			  </div>
+			</a>
+		  </div>
 
 	<div class="research-container">
 		<div class="research-header">
