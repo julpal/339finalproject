@@ -53,6 +53,7 @@ h2 {
   z-index: 999;
 }
 
+
 header {
   background-attachment: fixed; /* Parallax effect */
   background-image: url("../images/north_quad.jpg"); /* Your code here - Link to header.jpg in the images folder */
@@ -63,6 +64,22 @@ header {
   height: 400px; /* Parallax effect */
   grid-column: 1/ -1;
   grid-row: 2 / span 1;
+  /* opacity: .5; */
+}
+
+
+
+.intro{
+  text-align: center;
+  padding-bottom: 10px;
+}
+.intro h2 {
+  font-size: 30px;
+}
+
+.intro h1 {
+  font-size: 60px;
+  padding: 10px;
 }
 /* referenced hw 4 SI 339 */
 
