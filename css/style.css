@@ -450,6 +450,9 @@ h3.news-card-header {
   flex-direction: row;
 }
 .research-card {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5px;
   width: 100%;
 }
 .research-content {
