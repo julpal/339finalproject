@@ -399,6 +399,54 @@ h3.card-header {
 .slick-arrow.slick-hidden {
   display: none;
 }
+.news-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.news-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.img-class-news {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  align-content: center;
+  object-fit: contain;
+}
+
+.news-container {
+  padding: 16px 16px;
+  display: inline-block;
+  grid-column: 2 / span 2;
+  font-size: 16px;
+}
+
+h3.news-card-header {
+  align-content: text-top;
+  font-size: 21px;
+}
+
+.images-news {
+  overflow: hidden;
+  align-self: center;
+  justify-self: center;
+  grid-row: 1 / auto;
+  grid-column: 1 / auto;
+  height: 100%;
+  max-width: 210px;
+}
+#research{
+  width: 30%;
+}
+
 
 @media screen and (min-width: 768px) {
   .education {
