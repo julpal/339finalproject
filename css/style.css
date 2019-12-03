@@ -259,6 +259,10 @@ h3.card-header {
   max-width: 210px;
 }
 
+.pub-grid h2 {
+  text-align: center;
+}
+
 /* END CARD STYLING */
 .education {
   padding: 10px;
@@ -426,37 +430,21 @@ h3.card-header {
     /* grid-template-rows: 100px auto auto auto auto 100px; */
     grid-column-gap: 30px;
     row-gap: 15px;
-    width: 100vw;
+    width: 95%;
+    padding-left: 10px;
   }
 
-  .journal-pub-cards {
-    display: flex;
-    flex-direction: column;
+  .column1 {
+    flex: 50%;
+    grid-column: 1;
   }
 
-  .full-pub-cards {
-    display: flex;
-    flex-direction: column;
+  .column2 {
+    flex: 50%;
+    grid-column: 2;
   }
 
-  .short-papers-pub-cards{
-    display: flex;
-    flex-direction: column;
-  }
 
-  .workshop-papers-pub-cards {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .informally-published-pub-cards {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .media-coverage-pub-cards {
-    display: flex;
-    flex-direction: column;
-  }
   /*add this to css*/
 }
