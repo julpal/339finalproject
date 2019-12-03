@@ -459,6 +459,9 @@ h3.news-card-header {
   height: 100%;
   max-width: 210px;
 }
+#research {
+  width: 50%;
+}
 
 @media screen and (min-width: 768px) {
   .education {
