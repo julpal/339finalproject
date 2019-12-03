@@ -446,7 +446,13 @@ h3.news-card-header {
 #research{
   width: 30%;
 }
-
+.research-topics{
+  display: flex;
+  flex-direction: row;
+}
+.research-topics{
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .education {
