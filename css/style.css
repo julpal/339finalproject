@@ -55,7 +55,7 @@ h2 {
 
 header {
   background-attachment: fixed; /* Parallax effect */
-  background-image: url("../images/north_quad"); /* Your code here - Link to header.jpg in the images folder */
+  background-image: url("../images/north_quad.jpg"); /* Your code here - Link to header.jpg in the images folder */
   background-position: center; /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover; /* Parallax effect */
@@ -450,9 +450,6 @@ h3.news-card-header {
   flex-direction: row;
 }
 .research-card {
-  border: 2px solid black;
-  padding: 20px;
-  margin: 5px;
   width: 100%;
 }
 .research-content {
