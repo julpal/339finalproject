@@ -30,7 +30,6 @@ h2 {
   color: black;
 }
 
-
 .skip-main a {
   background: white;
   left: 0;
@@ -53,7 +52,6 @@ h2 {
   padding: 6px;
   z-index: 999;
 }
-
 
 header {
   background-attachment: fixed; /* Parallax effect */
@@ -188,7 +186,7 @@ button {
   border: 0;
   color: white;
   padding: 10px;
-  margin: 10px; 
+  margin: 10px;
   width: 100%;
 }
 
@@ -223,8 +221,8 @@ button {
   font-size: 16px;
 }
 
-.card-container-no-img{
-  grid-column: 1/span 3;
+.card-container-no-img {
+  grid-column: 1 / span 3;
   padding: 16px 16px;
 }
 
@@ -444,15 +442,18 @@ h3.news-card-header {
   height: 100%;
   max-width: 210px;
 }
-#research{
+#research {
   width: 30%;
 }
-.research-topics{
+.research-topics {
   display: flex;
   flex-direction: row;
 }
-.research-card{
+.research-card {
   width: 100%;
+}
+.research-content {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -506,20 +507,15 @@ h3.news-card-header {
     grid-column: 2;
   }
 
-
-
   /*add this to css*/
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-
-
-@media screen and (prefers-reduced-motion: reduce){
-  html{
-      scroll-behavior: auto;
-    }
-
-  .skip-main a{
+  .skip-main a {
     background: white;
     left: 0;
     padding: 6px;
@@ -531,6 +527,7 @@ h3.news-card-header {
   }
 
   .skip-main a:focus,
-  .skip-main a:active{
-    top:0px;
+  .skip-main a:active {
+    top: 0px;
   }
+}
