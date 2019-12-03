@@ -286,7 +286,23 @@ h3.card-header {
   text-align: center;
 }
 
+.sensitive h2 {
+  text-align: center;
+}
+
+.sensitive img {
+  text-align: center;
+}
+
+.sensitive {
+  width: 97%
+  padding-left: 10px;
+}
+
+
 /* END CARD STYLING */
+
+
 .education {
   padding: 10px;
 }
