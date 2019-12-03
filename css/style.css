@@ -291,11 +291,6 @@ h3.card-header {
   text-align: center;
 }
 
-.sensitive {
-  width: 97%;
-  padding-left: 10px;
-}
-
 /* END CARD STYLING */
 
 .education {
@@ -490,6 +485,13 @@ h3.news-card-header {
   display: block;
   width: 400px;
   margin: 0 auto;
+}
+#rintro {
+  color: #e60032;
+}
+#pubs {
+  text-align: center;
+  color: #e60032;
 }
 
 @media screen and (min-width: 768px) {
