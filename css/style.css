@@ -30,7 +30,11 @@ h2 {
   color: black;
 }
 
-.skip a {
+.card-container {
+
+}
+
+/* .skip a {
   background: white;
   left: 0;
   padding: 6px;
@@ -51,7 +55,24 @@ h2 {
   margin: 40px;
   padding: 6px;
   z-index: 999;
+} */
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
 }
+
+.skip a:focus{
+  top: 0px;
+}
+
 
 header {
   background-attachment: fixed; /* Parallax effect */
@@ -228,6 +249,11 @@ button {
 h3.card-header {
   align-content: text-top;
   font-size: 21px;
+  padding: 5px;
+}
+
+.pub-grid p {
+  padding: 15px;
 }
 
 .images-pub {
