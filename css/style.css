@@ -451,6 +451,9 @@ h3.news-card-header {
 }
 .research-card {
   width: 100%;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 5px;
 }
 .research-content {
   text-align: center;
