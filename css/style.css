@@ -53,7 +53,6 @@ h2 {
   z-index: 999;
 }
 
-
 header {
   background-attachment: fixed; /* Parallax effect */
   background-image: url("../images/north_quad.jpg"); /* Your code here - Link to header.jpg in the images folder */
@@ -67,9 +66,7 @@ header {
   /* opacity: .5; */
 }
 
-
-
-.intro{
+.intro {
   text-align: center;
   padding-bottom: 10px;
 }
@@ -474,6 +471,11 @@ h3.news-card-header {
 }
 .research-content {
   text-align: center;
+}
+.centeredImage {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
