@@ -135,9 +135,11 @@ nav {
   background-color: #5fddf3;
   display: flex;
   flex-direction: column;
-  max-height: 50vh;
+  max-height: 50vh; 
+  min-height:25vh; 
   justify-content: space-around;
   align-items: center;
+  /* display: inline;  */
   position: sticky;
   top: 0;
   z-index: 999;
@@ -483,7 +485,7 @@ h3.news-card-header {
   flex-direction: column;
 }
 .research-card {
-  width: 100%;
+  width: 50%;
 	align-self: center;
   border: 2px solid black;
   padding: 20px;
@@ -516,6 +518,12 @@ h3.news-card-header {
   .research-topics {
     flex-direction: row;
   }
+
+  .research-card {
+    height: 200px; 
+  }
+
+
   .education {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -530,10 +538,22 @@ h3.news-card-header {
   .students {
     grid-column: 2;
   }
-
+	.research-topics {
+	  display: flex;
+	  flex-direction: row;
+	}
+	.research-card {
+	 	width: 25%;
+	}
+	.research-content img {
+		width: 100%;
+	}
   nav {
-    flex-direction: row;
-    max-height: 10vh;
+    /* flex-direction: row;
+    max-height: 10vh; */
+    flex-direction: column;
+    max-height: 50vh;
+    min-height: 25vh; 
   }
 
   #logo {
@@ -549,6 +569,15 @@ h3.news-card-header {
   .research-topics {
     flex-direction: row;
   }
+
+  .research-card {
+    width:25%; 
+    height: 300px; 
+  }
+
+  .research-content {
+    text-align: center; 
+  }
   .pub-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -563,16 +592,7 @@ h3.news-card-header {
     flex: 50%;
     grid-column: 1;
   }
-	.research-topics {
-	  display: flex;
-	  flex-direction: row;
-	}
-	.research-card {
-	 	width: 25%;
-	}
-	.research-content img {
-		width: 100%;
-	}
+
   .column2 {
     flex: 50%;
     grid-column: 2;
@@ -586,11 +606,18 @@ h3.news-card-header {
 
   .oliver-pic {
     grid-column: 1;
+    padding-top: 40px; 
   }
 
   .about-text {
     padding-left: 50px;
     grid-column: 2;
+  }
+
+  nav {
+    flex-direction: row;
+    max-height: 10vh;
+    min-height: 5vh; 
   }
 
   /*add this to css*/
