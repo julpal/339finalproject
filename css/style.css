@@ -483,7 +483,8 @@ h3.news-card-header {
   flex-direction: column;
 }
 .research-card {
-  width: 25%;
+  width: 50%;
+	align-self: center;
   border: 2px solid black;
   padding: 20px;
   margin: 5px;
@@ -529,7 +530,16 @@ h3.news-card-header {
   .students {
     grid-column: 2;
   }
-
+	.research-topics {
+	  display: flex;
+	  flex-direction: row;
+	}
+	.research-card {
+	 	width: 25%;
+	}
+	.research-content img {
+		width: 100%;
+	}
   nav {
     flex-direction: row;
     max-height: 10vh;
