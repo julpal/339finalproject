@@ -541,7 +541,7 @@ h3.news-card-header {
 
 @media screen and (min-width: 1200px) {
   .research-topics{
-    flex-direction: column;
+    flex-direction: row;
   }
   .pub-grid {
     display: grid;
