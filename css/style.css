@@ -195,7 +195,7 @@ nav {
   width: 90%;
   border: 2px solid black;
   padding: 20px;
-  margin:auto;
+  margin: auto;
 }
 
 /* CARD STYLING */
@@ -503,13 +503,15 @@ h3.news-card-header {
   text-align: center;
   color: #e60032;
 }
-.news-style{
+.news-style {
   height: 50vh;
   overflow: scroll;
 }
 
 @media screen and (min-width: 768px) {
-
+  .research-topics {
+    flex-direction: row;
+  }
   .education {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -540,7 +542,7 @@ h3.news-card-header {
 }
 
 @media screen and (min-width: 1200px) {
-  .research-topics{
+  .research-topics {
     flex-direction: row;
   }
   .pub-grid {
@@ -564,20 +566,19 @@ h3.news-card-header {
   }
 
   .about {
-  display: grid;
-  grid-template-columns: 50% 50%
-  text-align: center;
-}
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+  }
 
-.oliver-pic {
-  grid-column: 1;
-}
+  .oliver-pic {
+    grid-column: 1;
+  }
 
-.about-text {
-  padding-left: 50px;
-  grid-column: 2;
-}
-.
+  .about-text {
+    padding-left: 50px;
+    grid-column: 2;
+  }
 
   /*add this to css*/
 }
