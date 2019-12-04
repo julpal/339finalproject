@@ -483,13 +483,16 @@ h3.news-card-header {
   flex-direction: column;
 }
 .research-card {
-  width: 100%;
+  width: 25%;
   border: 2px solid black;
   padding: 20px;
   margin: 5px;
 }
 .research-content {
   text-align: center;
+}
+.research-content img {
+	width: 100%;
 }
 .centeredImage {
   display: block;
