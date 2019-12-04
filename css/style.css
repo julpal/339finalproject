@@ -501,6 +501,10 @@ h3.news-card-header {
   text-align: center;
   color: #e60032;
 }
+.news-style{
+  height: 75vh;
+  overflow: scroll;
+}
 
 @media screen and (min-width: 768px) {
   .education {
