@@ -140,6 +140,7 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 #logo {
@@ -186,6 +187,7 @@ nav {
 
 .container {
   padding: 10px;
+  z-index: 10;
 }
 
 .about {
@@ -502,7 +504,7 @@ h3.news-card-header {
   color: #e60032;
 }
 .news-style{
-  height: 75vh;
+  height: 50vh;
   overflow: scroll;
 }
 
