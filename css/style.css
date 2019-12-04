@@ -215,7 +215,9 @@ button {
   margin: 10px;
   width: 100%;
 }
-
+button:hover {
+	background: #EF2D56;
+}
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -487,9 +489,12 @@ h3.news-card-header {
 .research-card {
   width: 50%;
 	align-self: center;
-  border: 2px solid black;
+  background: #5fddf3;
   padding: 20px;
   margin: 5px;
+}
+.research-card:hover {
+	background: lightgray;
 }
 .research-content {
   text-align: center;
