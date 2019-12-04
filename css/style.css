@@ -480,7 +480,7 @@ h3.news-card-header {
 }
 .research-topics {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .research-card {
   width: 100%;
@@ -509,9 +509,7 @@ h3.news-card-header {
 }
 
 @media screen and (min-width: 768px) {
-  .research-topics{
-    flex-direction: column;
-  }
+
   .education {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -542,6 +540,9 @@ h3.news-card-header {
 }
 
 @media screen and (min-width: 1200px) {
+  .research-topics{
+    flex-direction: column;
+  }
   .pub-grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -576,6 +577,7 @@ h3.news-card-header {
   padding-left: 50px;
   grid-column: 2;
 }
+.
 
   /*add this to css*/
 }
